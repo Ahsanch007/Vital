@@ -883,16 +883,18 @@
     font-weight: 500;
     line-height: 1.25rem;
     border-radius: 6.25rem;
-    color: #003049;
-    background-color: #f0ff00 !important;
-    border: 1px solid #f0ff00;
+    color: white;
+    background-color: #003049 !important;
+    border: 1px solid #003049;
     cursor: pointer;
     text-align: center;
     transition: background-color .3s, color .3s;
     letter-spacing: .04375rem;
     margin-right: .75rem;
     margin-bottom: .75rem;
-    font-family: DM Sans
+    font-family: DM Sans;
+    
+    
 }
 
 .StepperButton_StepperButtoncontainer--menuButton__iTjGB {
@@ -917,8 +919,10 @@
 }
 
 .StepperButton_StepperButtoncontainer__ayYHE:hover {
-    background-color: #003049 !important;
-    color: #f0ff00
+    border:1px solid #003049 !important;
+    color: black;
+    background-color: transparent !important;
+
 }
 
 .StepperButton_StepperButtoncontainer--menuButton__iTjGB {
@@ -1346,7 +1350,8 @@
 @media screen and (min-width:1280px) {
     .header_header__IkGoF .header_headerLogo__k6P_G img {
         object-fit: fill;
-        width: 10.375rem;
+        width: 200px;
+        height: 80px;
         margin-right: 5.625rem
     }
 }
@@ -2185,7 +2190,7 @@
 @media screen and (min-width:1280px) {
     .footer_footerContainer__jvzDq .footer_footerLogo__N05vi {
         padding-top: 0;
-        margin-top: 4rem;
+        margin-top: 1rem;
         position: absolute
     }
 

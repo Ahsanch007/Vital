@@ -1,3 +1,21 @@
 .hero-banner_textContent__AV4KF,.hero-banner_heroBanner___8vlB{
     background: #19AFB3 !important;
 }
+.containerss {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.slide-text{
+    width: 100%;
+    display: inline-block;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    left: 100%;
+    animation: slideText 10s linear infinite;
+}
+@keyframes slideText {
+    0% { left: 100%; }
+    100% { left: -100%; }
+}
