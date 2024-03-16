@@ -19,3 +19,12 @@
     0% { left: 100%; }
     100% { left: -100%; }
 }
+
+@media(max-width:776px){
+    .footer_footerBottom__Y99Li .footer_footerCopyright__p141M.footer_captchaNotice__rjLxw{
+        text-align: center;
+    }
+    .footer_footerBottom__Y99Li{
+        padding: 20px;
+    }
+}
