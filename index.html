@@ -60,7 +60,36 @@
 							class="StepperButton_StepperButtoncontainer__ayYHE StepperButton_StepperButtoncontainer--menuButton__iTjGB aos-init aos-animate"
 							data-aos="false">Start a quote</button></div>
 				</div>
+				<div class="header_megaMenu__2Re_R ">
+					<div class="header_megaMenuContentsConatiner___13TR" style="max-height: 596px;">
+						<div>
+							<div class="header_menuMobileHeading__oO_aO header_menuMobileHeading--subheading__E6W_3">
+								<h5>Menu</h5>
+							</div>
+							<ul class="header_menuMobileContentWrapper__QCg2q" data-lenis-prevent="true"
+								style="max-height: calc(338px);">
+								<li class="header_subMenuMobileContent__XG94M" data-menu-index="0"><span
+										class="header_menuItemLink__uCtF8"><a title="Why Choose Us" id="scrollToSection"
+											href="#">Why Choose Us</a></span></li>
+								<li class="header_subMenuMobileContent__XG94M" data-menu-index="0"><span
+										class="header_menuItemLink__uCtF8"><a title="Join Our Team"
+											id="scrollToSection2" href="#">Join Our Team</a></span></li>
+								<li class="header_subMenuMobileContent__XG94M" data-menu-index="0"><span
+										class="header_menuItemLink__uCtF8"><a title="Get your Quote"
+											id="scrollToSection3" href="#">Get your Quote</a></span></li>
+								<li class="header_subMenuMobileContent__XG94M" data-menu-index="0"><span
+										class="header_menuItemLink__uCtF8"><a title="Contact us" id="scrollToSection4"
+											href="#">Contact us</a></span></li>
 
+							</ul>
+						</div>
+						<div class="header_menuActionButtonsConatiner__3HCTE">
+							<div class="header_mobileButtonWrapper__mSNIQ"><button
+									class="StepperButton_StepperButtoncontainer__ayYHE StepperButton_StepperButtoncontainer--menuButton__iTjGB aos-init aos-animate"
+									data-aos="false">Start a quote</button></div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</header>
 	</div>
@@ -521,7 +550,25 @@
 			});
 		});
 	</script>
+	<script>
+		// Get the burger button and menu elements
+		const burgerButton = document.querySelector('.header_hamburgerButton__BBrCY');
+		const menu = document.querySelector('.header_megaMenu__2Re_R');
 
+		// Function to toggle the 'opened' class on the menu
+		function toggleMenu() {
+			menu.classList.toggle('header_megaMenu--opened__BlPW3');
+		}
+
+		// Add click event listener to the burger button
+		burgerButton.addEventListener('click', toggleMenu);
+
+		// Add click event listeners to the back buttons to close the menu
+		const backButtons = document.querySelectorAll('.header_backBtnContainer__QS8Kj button');
+		backButtons.forEach(button => {
+			button.addEventListener('click', toggleMenu);
+		});
+	</script>
 
 	<script>
 		// JavaScript for smooth scrolling
