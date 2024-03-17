@@ -15,6 +15,9 @@
     left: 100%;
     animation: slideText 10s linear infinite;
 }
+a{
+    border: none !important;
+}
 @keyframes slideText {
     0% { left: 100%; }
     100% { left: -100%; }

@@ -42,14 +42,14 @@
 					</div>
 					<nav aria-label="Header menu" class="header_logoMenuWrapper__kSFlK">
 						<ul class="header_navList__19l07">
-							<li class="header_navItem__PB8X4 "><span aria-haspopup="false"><a id="scrollToSection"
-										title="Why Choose Us" href="#">Why Choose Us</a></span></li>
-							<li class="header_navItem__PB8X4 "><span aria-haspopup="false"><a id="scrollToSection2"
-										title="Join Our Team" href="#">Join Our Team</a></span></li>
-							<li class="header_navItem__PB8X4 "><span aria-haspopup="false"><a id="scrollToSection3"
-										title="Get your Quote  " href="#">Get your Quote </a></span></li>
+							<li class="header_navItem__PB8X4 "><span aria-haspopup="false"><a title="Why Choose Us"
+										href="#targetSection">Why Choose Us</a></span></li>
+							<li class="header_navItem__PB8X4 "><span aria-haspopup="false"><a title="Join Our Team"
+										href="#targetSection2">Join Our Team</a></span></li>
+							<li class="header_navItem__PB8X4 "><span aria-haspopup="false"><a title="Get your Quote  "
+										href="#targetSection3">Get your Quote </a></span></li>
 							<li class="header_navItem__PB8X4 "><span aria-haspopup="false"><a title="Contact us"
-										id="scrollToSection4" href="#">Contact us</a></span></li>
+										href="#targetSection4">Contact us</a></span></li>
 
 						</ul>
 					</nav><button title="hamburger button" class="header_hamburgerButton__BBrCY" type="button"><span
@@ -553,13 +553,19 @@
 		});
 	</script>
 	<script>
-		// Get the burger button and menu elements
+		// Get the burger button, menu, and all menu items
 		const burgerButton = document.querySelector('.header_hamburgerButton__BBrCY');
 		const menu = document.querySelector('.header_megaMenu__2Re_R');
+		const menuItems = document.querySelectorAll('.header_subMenuMobileContent__XG94M');
 
 		// Function to toggle the 'opened' class on the menu
 		function toggleMenu() {
 			menu.classList.toggle('header_megaMenu--opened__BlPW3');
+		}
+
+		// Function to close the menu
+		function closeMenu() {
+			menu.classList.remove('header_megaMenu--opened__BlPW3');
 		}
 
 		// Add click event listener to the burger button
@@ -568,13 +574,19 @@
 		// Add click event listeners to the back buttons to close the menu
 		const backButtons = document.querySelectorAll('.header_backBtnContainer__QS8Kj button');
 		backButtons.forEach(button => {
-			button.addEventListener('click', toggleMenu);
+			button.addEventListener('click', closeMenu);
+		});
+
+		// Add click event listeners to each menu item to close the menu
+		menuItems.forEach(item => {
+			item.addEventListener('click', closeMenu);
 		});
 	</script>
 
+
 	<script>
-		// JavaScript for smooth scrolling
-		document.getElementById('scrollToSection').addEventListener('click', function (event) {
+		// JavaScript for smooth scrolling - Menu Item 1
+		document.querySelector('#scrollToSection').addEventListener('click', function (event) {
 			event.preventDefault(); // Prevent default anchor behavior
 
 			// Scroll smoothly to the target section
@@ -582,10 +594,19 @@
 				behavior: 'smooth'
 			});
 		});
-	</script>
-	<script>
-		// JavaScript for smooth scrolling
-		document.getElementById('scrollToSection2').addEventListener('click', function (event) {
+
+		// JavaScript for smooth scrolling - Menu Item 2
+		document.querySelector('#scrollToSection2').addEventListener('click', function (event) {
+			event.preventDefault(); // Prevent default anchor behavior
+
+			// Scroll smoothly to the target section
+			document.querySelector('#targetSection2').scrollIntoView({
+				behavior: 'smooth'
+			});
+		});
+
+		// JavaScript for smooth scrolling - Menu Item 3
+		document.querySelector('#scrollToSection3').addEventListener('click', function (event) {
 			event.preventDefault(); // Prevent default anchor behavior
 
 			// Scroll smoothly to the target section
@@ -593,21 +614,9 @@
 				behavior: 'smooth'
 			});
 		});
-	</script>
-	<script>
-		// JavaScript for smooth scrolling
-		document.getElementById('scrollToSection3').addEventListener('click', function (event) {
-			event.preventDefault(); // Prevent default anchor behavior
 
-			// Scroll smoothly to the target section
-			document.querySelector('#targetSection3').scrollIntoView({
-				behavior: 'smooth'
-			});
-		});
-	</script>
-	<script>
-		// JavaScript for smooth scrolling
-		document.getElementById('scrollToSection4').addEventListener('click', function (event) {
+		// JavaScript for smooth scrolling - Menu Item 4
+		document.querySelector('#scrollToSection4').addEventListener('click', function (event) {
 			event.preventDefault(); // Prevent default anchor behavior
 
 			// Scroll smoothly to the target section
@@ -616,6 +625,7 @@
 			});
 		});
 	</script>
+
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		AOS.init();
