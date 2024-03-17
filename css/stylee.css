@@ -6,6 +6,10 @@
     overflow: hidden;
     position: relative;
 }
+.custommm img{
+    width: 200px;
+    height: 80px;
+}
 .slide-text{
     width: 100%;
     display: inline-block;
@@ -29,5 +33,9 @@ a{
     }
     .footer_footerBottom__Y99Li{
         padding: 20px;
+    }
+    .custommm img{
+        width: 100px;
+        height: 80px;
     }
 }
