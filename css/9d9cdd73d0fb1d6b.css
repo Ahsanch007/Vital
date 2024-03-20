@@ -1410,7 +1410,9 @@ address {
     flex-direction: column;
     justify-content: space-between;
     border-top: .0625rem solid #003049;
-    border-bottom: .0625rem solid #003049
+    border-bottom: .0625rem solid #003049;
+    margin-bottom: 30px;
+    
 }
 
 @media screen and (min-width:1024px) {
@@ -1606,7 +1608,7 @@ address {
 
 @media screen and (min-width:1280px) {
     .MethodsText_methodsTextContainer__IApCt .MethodsText_HeadingSection__WzqIZ {
-        padding: 7rem 7.5rem 4rem
+        padding: 4rem 7.5rem 4rem
     }
 
     .MethodsText_methodsTextContainer__IApCt .MethodsText_HeadingSection__WzqIZ h3 {

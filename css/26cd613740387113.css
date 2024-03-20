@@ -3901,11 +3901,14 @@
     .ImageColTextForm_imageColTextForm--imageSmallDesign__6DehX .ImageColTextForm_textSection__Z5oEu {
         width: 58.33%;
         min-height: 50.1875rem;
-        padding: 1rem 7.5625rem 7rem 7.1875rem
+        padding: 7rem 7.5625rem 7rem 7.1875rem
     }
 
     .ImageColTextForm_imageColTextForm--imageSmallDesign__6DehX .ImageColTextForm_imageSection__MPGm1 {
         width: 41.66%
+    }
+    .hero-banner_heroBanner___8vlB .hero-banner_textContent__AV4KF{
+        margin-top: -110px !important;
     }
 }
 
