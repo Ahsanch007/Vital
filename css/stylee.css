@@ -37,6 +37,9 @@ a{
 .quote-left h2{
     font-size: 23px;
 }
+.MethodsText_methodNumber__QxN7H h4{
+    font-weight: 800 !important;
+}
 @keyframes slideText {
     0% { left: 100%; }
     100% { left: -100%; }

@@ -3539,7 +3539,9 @@
 
 @media screen and (min-width:1150px) {
     .hero-banner_heroBanner___8vlB .hero-banner_textContent__AV4KF h1 {
-        font-size: 3.75rem
+        font-size: 4rem;
+        font-weight: bold;
+        
     }
 }
 
