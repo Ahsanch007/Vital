@@ -22,6 +22,18 @@
 a{
     border: none !important;
 }
+
+
+.quote-right,.quote-left{
+    width: 50%;
+}
+.quote-right{
+    padding: 3rem 5rem;
+}
+.quote-right h4{
+    font-size: 25px;
+    margin: 20px 0px;
+}
 @keyframes slideText {
     0% { left: 100%; }
     100% { left: -100%; }
@@ -42,5 +54,14 @@ a{
         height: 6.25rem;
         width: 16.8125rem;
         padding-top: 3rem;
+    }
+}
+
+@media(max-width:800px){
+    .quote-right,.quote-left{
+        width: 100%;
+    }
+    .quote-right{
+        padding: 3rem;
     }
 }
