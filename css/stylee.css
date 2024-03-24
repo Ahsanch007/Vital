@@ -103,7 +103,7 @@ margin-bottom: 1.0625rem;
     }
     .main-sectionn{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         
     }
     .left-section h1{
