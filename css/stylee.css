@@ -48,16 +48,20 @@ a{
 
 
 
-.main-sectionn{
+.main-sectionn {
     display: flex;
     background-color: #1888ac;
     align-items: center;
-    
+    height: calc(100vh - 80px);  
 }
  
 .left-section,.video-section{
     width: 50%;
 
+}
+ 
+.video-section img{
+    height: calc(100vh - 80px);  
 }
 
 .left-section{
@@ -104,7 +108,7 @@ margin-bottom: 1.0625rem;
     .main-sectionn{
         display: flex;
         flex-direction: column-reverse;
-        
+        height: auto;
     }
     .left-section h1{
         font-size: 2.5rem;
@@ -116,4 +120,8 @@ margin-bottom: 1.0625rem;
         padding: 3rem 1.25rem;
         color: white;
     }
+    .video-section img{
+        height: auto;  
+    }
+    
 }
