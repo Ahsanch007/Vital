@@ -127,7 +127,8 @@ margin-bottom: 1.0625rem;
         color: white;
     }
     .video-section img{
-        height: auto;  
+        height: 150px;
+        object-fit: cover;  
     }
     .mbl-bttn{
         width: 100%;
@@ -137,7 +138,7 @@ margin-bottom: 1.0625rem;
         display: block;
         color: black;
         border: 2px solid black;
-        padding: 15px 10px;
+        padding: 10px 7px;
     }
     .header_header__IkGoF .header_headerWrapper__EF5GH{
         align-items: center;
