@@ -74,6 +74,9 @@ a{
 line-height: 100%;
 margin-bottom: 1.0625rem;
 }
+.mobile-btmm{
+    display: none;
+}
 
 @media(max-width:776px){
     .footer_footerBottom__Y99Li .footer_footerCopyright__p141M.footer_captchaNotice__rjLxw{
@@ -117,11 +120,27 @@ margin-bottom: 1.0625rem;
     margin-bottom: 1.0625rem;
     }
     .left-section{
-        padding: 3rem 1.25rem;
+        padding-top: 2rem;
+        padding-bottom: 4.5rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
         color: white;
     }
     .video-section img{
         height: auto;  
+    }
+    .mbl-bttn{
+        width: 100%;
+        padding-top: 1rem;
+    }
+    .mobile-btmm{
+        display: block;
+        color: black;
+        border: 2px solid black;
+        padding: 15px 10px;
+    }
+    .header_header__IkGoF .header_headerWrapper__EF5GH{
+        align-items: center;
     }
     
 }
