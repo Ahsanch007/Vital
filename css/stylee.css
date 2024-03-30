@@ -94,8 +94,8 @@ margin-bottom: 1.0625rem;
         padding: 20px;
     }
     .custommm img{
-        width: 200px;
-        height: 150px;
+        width: 150px;
+        height: auto;
     }
     .footer_footerContainer__jvzDq .footer_footerLogo__N05vi {
         height: 6.25rem;
@@ -152,5 +152,7 @@ margin-bottom: 1.0625rem;
     .header_header__IkGoF .header_headerWrapper__EF5GH{
         align-items: center;
     }
-    
+    .elementor-icon-list-text{
+        font-size: 13px;
+    }
 }
