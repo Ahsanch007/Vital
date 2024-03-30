@@ -52,7 +52,7 @@ a{
     display: flex;
     background-color: #1888ac;
     align-items: center;
-    height: calc(100vh - 80px);  
+    height: calc(100vh - 115px);  
 }
  
 .left-section,.video-section{
@@ -76,6 +76,14 @@ margin-bottom: 1.0625rem;
 }
 .mobile-btmm{
     display: none;
+}
+
+.top-section{
+    padding: 10px 2rem;
+    background-color: #E7E7E7;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 @media(max-width:776px){
@@ -111,7 +119,8 @@ margin-bottom: 1.0625rem;
     .main-sectionn{
         display: flex;
         flex-direction: column-reverse;
-        height: auto;
+        /* height: calc(100vh - 139px); */
+        justify-content: center !important;
     }
     .left-section h1{
         font-size: 2.5rem;
@@ -127,7 +136,7 @@ margin-bottom: 1.0625rem;
         color: white;
     }
     .video-section img{
-        height: 150px;
+        height: 170px;
         object-fit: cover;  
     }
     .mbl-bttn{
