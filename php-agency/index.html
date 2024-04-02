@@ -6818,6 +6818,23 @@ header.et-l--header .et_pb_menu__logo > img {
 				width: auto
 			}
 		}
+
+		.header_menuItemLink__uCtF8 {
+			padding: 1.25rem;
+
+		}
+
+		.header_menuMobileHeading__oO_aO h5 {
+			color: white !important;
+		}
+
+		.header_menuItemLink__uCtF8 a {
+			width: 100%;
+			padding: 0px !important;
+			color: white !important;
+			font-size: 1.125rem;
+			font-weight: 300;
+		}
 	</style>
 	<link rel="stylesheet" id="et-core-unified-4143-cached-inline-styles" href="css/et-core-unified-4143.min.css">
 	<link rel="preload" as="style" id="et-core-unified-tb-3999-tb-4077-deferred-4143-cached-inline-styles"
@@ -6879,17 +6896,20 @@ header.et-l--header .et_pb_menu__logo > img {
 
 							</ul>
 						</nav>
-						<button title="hamburger button" class="header_hamburgerButton__BBrCY" type="button"><span
-								class="header_hamburgerIcon__eLODd"><span class="header_bar___T52p "></span><span
-									class="header_bar___T52p "></span><span
-									class="header_bar___T52p "></span></span></button>
+						<button title="hamburger button" class="header_hamburgerButton__BBrCY" type="button">
+							<span class="header_hamburgerIcon__eLODd">
+								<span class="header_bar___T52p"></span>
+								<span class="header_bar___T52p"></span>
+								<span class="header_bar___T52p"></span>
+							</span>
+						</button>
 						<div class="header_desktopButtonWrapper__k_8k3">
 							<a href="https://kxyuypv19mb.typeform.com/to/zDrybglB">
 								<button style="border: 2px solid black; padding: 10px 20px; cursor: pointer;"
 									class="  aos-init aos-animate" data-aos="false">Start a quote</button> </a>
 						</div>
 					</div>
-					<div class="header_megaMenu__2Re_R ">
+					<div class="header_megaMenu__2Re_R    ">
 						<div class="header_megaMenuContentsConatiner___13TR" style="max-height: 596px;">
 							<div>
 								<div
@@ -6986,10 +7006,12 @@ header.et-l--header .et_pb_menu__logo > img {
 
 
 
-													<a href="https://youtu.be/NeZ2KndMMUM?si=fev_Cg28PcwqLZe1"><span
-															class="et_pb_image_wrap"><img decoding="async" width="1280"
-																height="720" src="images/test.jpg" alt="" title="test"
-																class="wp-image-59289"></span></a>
+													<iframe width="560" height="315"
+														src="https://www.youtube.com/embed/NeZ2KndMMUM?si=G1riQoaLuJQ1nVW4"
+														title="YouTube video player" frameborder="0"
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+														referrerpolicy="strict-origin-when-cross-origin"
+														allowfullscreen></iframe>
 												</div>
 												<div class="et_pb_module et_pb_code et_pb_code_1">
 
@@ -7488,7 +7510,16 @@ header.et-l--header .et_pb_menu__logo > img {
 		id="flying-scripts">const loadScriptsTimer = setTimeout(loadScripts, 5 * 1000); const userInteractionEvents = ["mouseover", "keydown", "touchstart", "touchmove", "wheel"]; userInteractionEvents.forEach(function (event) { window.addEventListener(event, triggerScriptLoader, { passive: !0 }) }); function triggerScriptLoader() { loadScripts(); clearTimeout(loadScriptsTimer); userInteractionEvents.forEach(function (event) { window.removeEventListener(event, triggerScriptLoader, { passive: !0 }) }) }
 			function loadScripts() { document.querySelectorAll("script[data-type='lazy']").forEach(function (elem) { elem.setAttribute("src", elem.getAttribute("data-src")) }) }</script>
 
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const hamburgerButton = document.querySelector('.header_hamburgerButton__BBrCY');
+			const megaMenu = document.querySelector('.header_megaMenu__2Re_R');
 
+			hamburgerButton.addEventListener('click', function () {
+				megaMenu.classList.toggle('header_megaMenu--opened__BlPW3');
+			});
+		});
+	</script>
 </body>
 
 </html>
